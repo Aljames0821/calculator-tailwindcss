@@ -33,10 +33,10 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 p-4">
-      
+   
+      <div className="flex items-start space-x-10 justify-center min-h-screen bg-gray-900 p-4">
       {/* History Section - OUTSIDE the calculator */}
-      <div className="bg-white shadow-md rounded-lg p-4 mb-6 w-110">
+      <div className="bg-white  shadow-md rounded-lg p-3  mr-6 w-90">
         <h2 className="text-lg font-bold mb-2">History</h2>
         <div className="h-32 overflow-y-auto border p-2 rounded">
           {history.length > 0 ? (
@@ -58,7 +58,7 @@ function App() {
       </div>
 
       {/* Calculator Box */}
-      <div className="bg-white p-6 rounded-lg shadow-lg w-110">
+      <div className="bg-white p-6  rounded-lg shadow-lg w-90 mb-10">
         <h1 className="text-3xl font-bold text-center mb-4">CALCULATOR</h1>
 
         {/* Display Screen */}
