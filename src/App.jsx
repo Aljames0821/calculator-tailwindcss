@@ -35,16 +35,16 @@ function App() {
   return (
    
       <div className="flex items-start space-x-10 justify-center min-h-screen bg-gray-900 p-4">
-      {/* History Section - OUTSIDE the calculator */}
+      {/* History Section */}
       <div className="bg-white  shadow-md rounded-lg p-3  mr-6 w-90">
         <h2 className="text-lg font-bold mb-2">History</h2>
-        <div className="h-32 overflow-y-auto border p-2 rounded">
+        <div className="h-100 overflow-y-auto border p-2 rounded">
           {history.length > 0 ? (
-            history.map((item, index) => (
-              <p key={index} className="text-gray-700 text-sm">{item}</p>
+            history.map((item, index) => ( 
+              <p key={index} className="text-gray-700 text-2xl">{item}</p>
             ))
           ) : (
-            <p className="text-gray-500 text-sm">No history yet.</p>
+            <p className="text-gray-500 text-2xl">No history yet.</p>
           )}
         </div>
         {history.length > 0 && (
